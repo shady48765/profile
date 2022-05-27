@@ -29,8 +29,19 @@
   text-align: center;
   color: black;
 }
+.contact-form .btnContact:disabled {
+  width: fit-content;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: gray;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
 .contact-form .btnContact {
-
   width: fit-content;
   border: none;
   border-radius: 1rem;

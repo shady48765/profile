@@ -17,13 +17,13 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addInfo(item:any){
+  addInfo(item:any,form:any){
   console.log(item);
     this.httpClient
     .post('https://portfolio-e787c-default-rtdb.firebaseio.com/contact.json',
     item
     )
-    .subscribe((response) => {console.log(response),loadMessageCount(this),alert("Message Sent!!")})
+    .subscribe((response) => {console.log(response),loadMessageCount(this),alert("Message Sent!!"),form.reset()})
   }
 
 }
