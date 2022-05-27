@@ -59,10 +59,7 @@
 }
 .alert-danger {
 }
-.toast-container{
-    padding-left: 5%;
-    padding-bottom: 1%;
-}
+
 .contact-form.form-control.ng-touched.ng-invalid {
   border-radius: 3rem;
 }
@@ -77,4 +74,19 @@
 }
 .form-group {
   padding: 5px;
+}
+.footer-container{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+}
+.toast-container{
+  position: relative;
+  top: 30%;
+  padding-left: 5%;
+}
+footer{
+  position: absolute;
+  bottom: 0;
 }
