@@ -1,0 +1,142 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<div class="container">
+  <h1 style="text-shadow: 1px 1px 2px #000000; background-color: white; width: fit-content;">Contact</h1>
+</div>
+
+<div class="container contact-form">
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <form #contactForm="ngForm" (ngSubmit)="addInfo(contactForm.value)">
+      <h3>Drop Me a Message</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              required
+              #txtName="ngModel"
+              ngModel
+              type="text"
+              name="txtName"
+              class="form-control"
+              placeholder="Your Name *"
+              value=""
+            />
+            <div
+              class="alert alert-secondary"
+              *ngIf="txtName.touched && !txtName.valid"
+            >
+              Name Required
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              #txtEmail="ngModel"
+              ngModel
+              type="text"
+              name="txtEmail"
+              class="form-control"
+              placeholder="Your Email"
+              value=""
+            />
+          </div>
+          <div class="form-group">
+            <input
+              ngModel
+              type="text"
+              name="txtPhone"
+              class="form-control"
+              placeholder="Your Phone Number "
+              value=""
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea
+              #txtMsg="ngModel"
+              ngModel
+              required
+              name="txtMsg"
+              class="form-control"
+              placeholder="Your Message *"
+              style="width: 100%; height: 90px"
+            ></textarea>
+            <div
+              class="alert alert-secondary"
+              *ngIf="txtMsg.touched && !txtMsg.valid"
+            >
+            `Message Required
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              [disabled]="!contactForm.valid"
+              type="submit"
+              name="btnSubmit"
+              class="btnContact"
+              value="Send Message"
+            />
+          </div>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+
+</div>
+<div class="toast-container">
+<div class="toast fade show" id="myToast">
+    <div class="toast-header">
+        <strong class="me-auto"><i class="bi-gift-fill"></i> {{totalMessages}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+</div>
+</div>
+<div>
+
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" onclick="window.open('https://www.facebook.com/');" role="button"
+           ><i class="fa fab fa-facebook-f"></i
+          ></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1"  onclick="window.open('https://www.twitter.com/');" role="button"
+           ><i class="fa fab fa-twitter"></i
+          ></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1"  onclick="location.href='mailto:amankumar48765@gmail.com';" role="button"
+           ><i class="fa fab fa-google"></i
+          ></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" onclick="window.open('https://www.instagram.com/shady48765');" role="button"
+           ><i class="fa fab fa-instagram"></i
+          ></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1"  onclick="window.open('https://www.linkedin.com/in/aman-kumar-s48765/');" role="button"
+           ><i class="fa fab fa-linkedin"></i
+          ></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" onclick="window.open('https://github.com/shady48765/');" role="button"
+           ><i class="fa fab fa-github"></i
+          ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Thanks for visiting
+    </div>
+
+  </footer>
+</div>

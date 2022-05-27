@@ -1,0 +1,28 @@
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    z-index: 0;
+}
+
+.shadow-lg {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */  
+}
+
+.carousel {
+    bottom: -25%;
+}
+
+#quotesIQuote{
+text-align: center;
+}
+
+.card-img {
+    max-height: 200px;
+    object-fit: cover;
+}
+.col:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
