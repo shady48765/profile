@@ -13,6 +13,9 @@
 .carousel {
     bottom: -25%;
 }
+.col-md-4{
+    margin: auto;
+}
 
 #quotesIQuote{
 text-align: center;
