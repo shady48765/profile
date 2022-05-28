@@ -50,6 +50,7 @@
   padding-right: 10%;
   background: #000;
   font-weight: 600;
+  z-index: 1;
   color: #fff;
   cursor: pointer;
 }
@@ -79,13 +80,14 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 300px;
-  z-index: -9;
+  height: 200px;
+  z-index: 0;
 }
 .toast-container{
   position: relative;
-  top: 30%;
+  float: left;
   padding-left: 5%;
+
 }
 footer{
   position: absolute;
